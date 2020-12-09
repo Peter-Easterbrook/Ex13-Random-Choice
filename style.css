@@ -42,6 +42,9 @@ textarea {
   font-size: 1rem;
   border-radius: 0.3rem;
 }
+.textarea {
+  border: none;
+}
 
 .tag {
   background-color: #f0932b;
