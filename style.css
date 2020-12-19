@@ -41,9 +41,11 @@ textarea {
   margin: 0 0 1.4rem;
   font-size: 1rem;
   border-radius: 0.3rem;
+  outline: none;
 }
 .textarea {
   border: none;
+  outline: none;
 }
 
 .tag {
