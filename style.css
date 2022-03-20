@@ -47,6 +47,9 @@ textarea {
   border: none;
   outline: none;
 }
+textarea:focus {
+  outline: none;
+}
 
 .tag {
   background-color: #f0932b;
