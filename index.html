@@ -3,6 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#99d2e6"
+    />
+    <meta name="msapplication-TileColor" content="#030813" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Random Choice Picker</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -10,10 +38,8 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-
-    <title>Random Choice Picker</title>
   </head>
-  <body>
+  <body id="vanta">
     <div class="container">
       <h3>
         Enter all of the choices divided by a comma. <br />Press enter when
@@ -31,5 +57,32 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"
+      integrity="sha512-Wft1v8e5sfJmolWfOyea3DBsf2qHZv6uBKLkvEYNSUo0wImWa9DYZH1lHU5y/UIfQu4xJ3xahqv1X4pvx3cv/w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.clouds.min.js"
+      integrity="sha512-b69OnXWaP5341Ea0Yk7i2mlNH+OurIW4udbikKpmYneTePmKbiu+S1qxGanqUchivRNC8df5dT4Tty19SElAHw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      VANTA.CLOUDS({
+        el: '#vanta',
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        skyColor: 0x425,
+        sunColor: 0xffc818,
+        sunGlareColor: 0xff001b,
+        sunlightColor: 0xffa400,
+      });
+    </script>
   </body>
 </html>
