@@ -5,12 +5,8 @@
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, 0.4);
   --bg-color: #141218;
-  --expanded: 100%;
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   --text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  --text-shadow-light: 0 2px 4px rgba(255, 255, 255, 0.4);
-  --transition: all 0.2s ease-out;
-  --filter-drop-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 }
 * {
   box-sizing: border-box;
@@ -38,7 +34,7 @@ h3 {
   width: 500px;
 }
 
-textarea {
+.textarea {
   background-color: var(--quaternary-color);
   color: var(--text-color);
   border: none;
@@ -53,10 +49,6 @@ textarea {
   border-radius: 0.3rem;
   outline: none;
   box-shadow: var(--box-shadow);
-}
-.textarea {
-  border: none;
-  outline: none;
 }
 textarea:focus {
   outline: none;
