@@ -11,6 +11,9 @@
 * {
   box-sizing: border-box;
 }
+html, body {
+  background-color: #000;
+}
 
 body {
   font-family: 'Mulish', sans-serif;
@@ -20,7 +23,6 @@ body {
   font-weight: 300;
   overflow: hidden;
   margin: 0;
-  background: rgb(109, 154, 237);
 }
 
 h3 {
