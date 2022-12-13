@@ -5,13 +5,14 @@
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, 0.4);
   --bg-color: #141218;
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   --text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 * {
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   background-color: #000;
 }
 
