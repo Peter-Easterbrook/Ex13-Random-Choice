@@ -1,5 +1,6 @@
 const tagsEl = document.getElementById('tags');
 const textarea = document.getElementById('textarea');
+const tadaSound = new Audio('tada.mp3');
 
 textarea.focus();
 
@@ -48,7 +49,11 @@ function randomSelect() {
     setTimeout(() => {
       const randomTag = pickRandomTag();
 
-      highlightTag(randomTag);
+      if (randomTag !== undefined) {
+        highlightTag(randomTag);
+        tadaSound.currentTime = 0;
+        tadaSound.play();
+      }
     }, 100);
   }, times * 100);
 }
