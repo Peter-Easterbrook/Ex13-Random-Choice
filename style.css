@@ -15,7 +15,9 @@ html,
 body {
   background-color: #000;
 }
-
+html::-webkit-scrollbar {
+  display: none;
+}
 body {
   font-family: 'Mulish', sans-serif;
   display: grid;
@@ -55,6 +57,9 @@ h3 {
 }
 textarea:focus {
   outline: none;
+}
+textarea::-webkit-scrollbar {
+  display: none;
 }
 #tags {
   display: flex;
