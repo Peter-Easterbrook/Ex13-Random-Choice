@@ -1,6 +1,6 @@
 const tagsEl = document.getElementById('tags');
 const textarea = document.getElementById('textarea');
-const tadaSound = new Audio('tada.mp3');
+const tadaSound = new Audio('cheer.wav');
 
 textarea.focus();
 
